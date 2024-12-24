@@ -1,6 +1,7 @@
 <?php
 
 use App\Services\AIService;
+use App\Services\DocumentService;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 
@@ -10,7 +11,7 @@ Artisan::command('inspire', function () {
 
 Artisan::command('gemini-test', function () {
  
-    $pdfContents = AIService::new()->processDocument('Lexical_Analysis.pdf');
+    $pdfContents = DocumentService::new()->processDocument('Lexical_Analysis.pdf');
     $summary = AIService::new()->generate("summarize the following" . $pdfContents);
 
     echo $summary;

@@ -71,26 +71,4 @@ class AIService extends AbstractService
         return null;
     }
 
-    public function processDocument($filePath) {
-        $extension = pathinfo($filePath, PATHINFO_EXTENSION);
-        $text = '';
-
-       
-        if ($extension === 'docx' || $extension === 'doc') {
-            $phpWord = IOFactory::load($filePath);
-            foreach ($phpWord->getSections() as $section) {
-                foreach ($section->getElements() as $element) {
-                    if (method_exists($element, 'getText')) {
-                        $text .= $element->getText();
-                    }
-                }
-            }
-        } elseif ($extension === 'pdf') {
-            $pdfParser = new Parser();
-            $pdf = $pdfParser->parseFile($filePath);
-            $text = $pdf->getText();
-        }
-
-        return trim($text);
-    }
 }
