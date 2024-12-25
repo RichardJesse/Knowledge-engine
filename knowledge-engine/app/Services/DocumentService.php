@@ -13,8 +13,7 @@ class DocumentService extends AbstractService
      * Extracts the content from the pdf/word document
      * 
      * @param string $filePath - the path to the document that needs to be processed
-     * 
-     * @return string $text - this is the text from the pdf/word document
+     * @return string 
      * 
      */
     public function processDocument($filePath) {
