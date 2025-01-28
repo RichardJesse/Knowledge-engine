@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "86f31d3f8bdab2881aaa5c8a3a125351",
+    "packages": [
+        {
+            "name": "jesse-richard/dice-bear-php",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RichardJesse/diceBearPhp.git",
+                "reference": "cfde094f87df256b4ee9c765967358d6d35b2cda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RichardJesse/diceBearPhp/zipball/cfde094f87df256b4ee9c765967358d6d35b2cda",
+                "reference": "cfde094f87df256b4ee9c765967358d6d35b2cda",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.24",
+                "pestphp/pest": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JesseRichard\\DiceBearPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "RichardJesse",
+                    "email": "jesse.richard@strathmore.edu"
+                }
+            ],
+            "description": "Simple package to generate avatars for your users",
+            "support": {
+                "issues": "https://github.com/RichardJesse/diceBearPhp/issues",
+                "source": "https://github.com/RichardJesse/diceBearPhp/tree/v1.0.4"
+            },
+            "time": "2024-12-23T18:09:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

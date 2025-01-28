@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use App\Services\AIService;
 use App\Services\DocumentService;
 use Illuminate\Foundation\Inspiring;
@@ -16,4 +17,10 @@ Artisan::command('gemini-test', function () {
 
     echo $summary;
 
+});
+
+Artisan::command('profile', function () {
+    $user = User::find(1)?->seed('jesse')->adventurer('jpg')->flip()->size(32)->rotate(361)->url();
+
+    echo $user;
 });

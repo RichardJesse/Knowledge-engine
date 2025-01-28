@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbde910551cdb16c9e01759427216111",
+    "content-hash": "346cc431031f9f730e8278f3aae5eafa",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1351,6 +1351,47 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "jesse-richard/dice-bear-php",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RichardJesse/diceBearPhp.git",
+                "reference": "cfde094f87df256b4ee9c765967358d6d35b2cda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RichardJesse/diceBearPhp/zipball/cfde094f87df256b4ee9c765967358d6d35b2cda",
+                "reference": "cfde094f87df256b4ee9c765967358d6d35b2cda",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.24",
+                "pestphp/pest": "^3.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JesseRichard\\DiceBearPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "RichardJesse",
+                    "email": "jesse.richard@strathmore.edu"
+                }
+            ],
+            "description": "Simple package to generate avatars for your users",
+            "support": {
+                "issues": "https://github.com/RichardJesse/diceBearPhp/issues",
+                "source": "https://github.com/RichardJesse/diceBearPhp/tree/v1.0.4"
+            },
+            "time": "2024-12-23T18:09:13+00:00"
         },
         {
             "name": "laravel/fortify",

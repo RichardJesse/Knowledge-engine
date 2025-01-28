@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jesse-richard/dice-bear-php": "^1.0"
+    }
+}
